@@ -313,7 +313,7 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
-		justify-items: center;
+		justify-items: space-evenly;
 	}
 
 	.support {
@@ -321,6 +321,7 @@
 		height: 243px;
 	}
 	.support_container .wrapper {
+		width: 100%;
 		display: flex;
 		justify-items: center;
 		align-items: center;
@@ -423,9 +424,10 @@
 	.inner_support_container {
 		margin-top: 50px;
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		gap: 20px;
-		justify-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+		justify-items: space-around;
+		align-items: space-around;
 	}
 
 	.support {
@@ -433,6 +435,7 @@
 		height: 243px;
 	}
 	.support_container .wrapper {
+		width: 100%;
 		display: flex;
 		justify-items: center;
 		align-items: center;
@@ -552,10 +555,11 @@
 		height: 243px;
 	}
 	.support_container .wrapper {
+		width: 100%;
 		display: flex;
 		flex-direction: column-reverse;
 		justify-items: center;
-		align-items: start;
+		align-items: center;
 	}
 	.support_girl_container {
 		margin-left: 0;
