@@ -10,12 +10,10 @@ import fs from "fs";
 
 const server = browserSync.create();
 
-// Очистка директории dist
 gulp.task("clean", () => {
 	return deleteAsync(["dist"]);
 });
 
-// Копирование и объединение HTML файлов
 gulp.task("html", () => {
 	return gulp
 		.src("src/sections/*.html")
@@ -25,7 +23,6 @@ gulp.task("html", () => {
 		.pipe(server.stream());
 });
 
-// Объединение и минимизация CSS файлов
 gulp.task("css", () => {
 	return gulp
 		.src("src/styles/*.css")
@@ -35,7 +32,6 @@ gulp.task("css", () => {
 		.pipe(server.stream());
 });
 
-// Объединение и минимизация JavaScript файлов
 gulp.task("js", () => {
 	return gulp
 		.src("src/scripts/*.js")
@@ -50,7 +46,6 @@ gulp.task("js", () => {
 		.pipe(server.stream());
 });
 
-// Копирование изображений
 gulp.task("images", () => {
 	return gulp
 		.src("public/images/**/*")
@@ -58,7 +53,6 @@ gulp.task("images", () => {
 		.pipe(server.stream());
 });
 
-// Запуск сервера разработки с горячей перезагрузкой
 gulp.task("serve", () => {
 	server.init({
 		server: {
@@ -84,8 +78,12 @@ gulp.task("serve", () => {
 	);
 });
 
-// Задача по умолчанию
 gulp.task(
 	"default",
 	gulp.series("clean", gulp.parallel("html", "css", "js", "images"), "serve")
+);
+
+gulp.task(
+	"build",
+	gulp.series("clean", gulp.parallel("html", "css", "js", "images"))
 );
