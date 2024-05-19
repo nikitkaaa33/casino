@@ -15,10 +15,14 @@
 	justify-content: center;
 }
 .places-header_img__left {
-	margin-right: 256px;
+	margin-right: 100px;
+	width: 233.11px;
+	height: 208.94px;
 }
 .places-header_img__right {
-	margin-left: 400px;
+	margin-left: 100px;
+	width: 233.11px;
+	height: 208.94px;
 }
 .places-header_text {
 	width: 1056px;
@@ -28,7 +32,7 @@
 }
 .places-header_text span {
 	font-family: Alumni Sans;
-	font-size: 75px;
+	font-size: 96px;
 	font-weight: 800;
 	line-height: 115.2px;
 	text-align: center;
@@ -107,9 +111,9 @@
 	text-align: left;
 	padding: 18px 48px 40px 42px;
 	font-family: Inter;
-	font-size: 24px;
+	font-size: 16px;
 	font-weight: 400;
-	line-height: 29.05px;
+	line-height: 16.05px;
 	text-align: left;
 }
 
@@ -138,19 +142,40 @@
 	width: 42px;
 	left: 50px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1920px) {
 	.places-cards {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
-@media only screen and (min-device-width: 1280px) and (max-device-width: 1919px) {
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+	.places-section {
+		padding: 20px;
+	}
 	.places-cards {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.places-card {
+		width: 366px;
+		height: 508px;
+	}
+	.places-header_text {
+		font-size: 52px;
+	}
+	.text-overlay h2 {
+		font-size: 40px;
+	}
+	.places-header_text span {
+		font-size: 56px;
+		font-weight: 800;
+		line-height: 93.2px;
+	}
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+	.places-section {
+		padding: 20px;
+	}
 	.places-cards {
 		grid-template-columns: 1fr;
 		gap: 40px;
@@ -164,11 +189,32 @@
 	.places-header_text {
 		text-align: center;
 	}
+	.places-header_text span {
+		font-size: 65px;
+		font-weight: 800;
+		line-height: 93.2px;
+	}
 }
-@media only screen and (min-device-width: 425px) and (max-device-width: 767px) {
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+	.places-section {
+		padding: 20px;
+	}
 	.places-cards {
 		grid-template-columns: 1fr;
 		gap: 40px;
+	}
+	.places-card {
+		width: 368px;
+		height: 494px;
+	}
+	.places-card_btn {
+		font-size: 22px;
+	}
+	.places-header_text {
+		font-size: 52px;
+	}
+	.text-overlay h2 {
+		font-size: 40px;
 	}
 	.places-header_img__left {
 		display: none;
@@ -182,14 +228,13 @@
 	.places-header_text {
 		width: 100%;
 
-		font-size: 40px;
+		font-size: 32px;
 	}
 	.places-header_text span {
 		font-family: Alumni Sans;
-		font-size: 75px;
+		font-size: 32px;
 		font-weight: 800;
-		line-height: 115.2px;
+		line-height: 38.4px;
 		text-align: center;
-		color: #13c636;
 	}
 }
