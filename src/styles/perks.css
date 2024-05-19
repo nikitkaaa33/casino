@@ -1,0 +1,58 @@
+.perks_container {
+	width: 100%;
+	height: 256px;
+	text-align: center;
+	margin: 20px 0;
+	display: block;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../images/perks_BG.svg");
+	display: block;
+	align-content: center;
+}
+
+.perks_header {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.perks_header p {
+	font-family: Alumni Sans;
+	font-size: 96px;
+	font-weight: 800;
+	line-height: 115.2px;
+	text-align: center;
+	color: #13c636;
+	margin-top: 21px;
+	margin-bottom: 21px;
+	width: 100%;
+}
+
+.perks_header::before,
+.perks_header::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	background-color: #13c636;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.perks_header::before {
+	top: -10px;
+}
+
+.perks_header::after {
+	bottom: -10px;
+}
+@media only screen and (min-device-width: 425px) and (max-device-width: 767px) {
+	.perks_header p {
+		font-family: Alumni Sans;
+		font-size: 48px;
+		font-weight: 800;
+		line-height: 57.6px;
+		text-align: center;
+	}
+}

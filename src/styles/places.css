@@ -1,0 +1,195 @@
+.places-section {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../images/placesBG.svg");
+	padding-bottom: 160px;
+}
+.places-header {
+	display: flex;
+	padding-top: 52px;
+	justify-content: center;
+}
+.places-header_img__left {
+	margin-right: 256px;
+}
+.places-header_img__right {
+	margin-left: 400px;
+}
+.places-header_text {
+	width: 1056px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-size: 68px;
+}
+.places-header_text span {
+	font-family: Alumni Sans;
+	font-size: 75px;
+	font-weight: 800;
+	line-height: 115.2px;
+	text-align: center;
+	color: #13c636;
+}
+.places-cards {
+	display: grid;
+	gap: 244px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 77px;
+	padding: 10px 200px;
+}
+
+.places-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 533px;
+	height: 733px;
+	position: relative;
+	margin: auto;
+}
+
+.image-container {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.base-image,
+.overlay-image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.overlay-image {
+	position: absolute;
+	bottom: -67%;
+	left: 0;
+	z-index: 1;
+}
+
+.text-overlay {
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-overlay h2 {
+	font-family: Alumni Sans;
+	font-size: 56px;
+	font-weight: 800;
+	text-align: center;
+	text-align: center;
+	color: #13c636;
+}
+.text-overlay p {
+	width: 100%;
+	text-align: left;
+	padding: 18px 48px 40px 42px;
+	font-family: Inter;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 29.05px;
+	text-align: left;
+}
+
+.places-card_btn {
+	width: 100%;
+	border-radius: 0 0 37.5px 37.5px;
+	background-color: #13c636;
+	color: #ffffff;
+	cursor: pointer;
+	border: none;
+	margin-top: auto;
+	font-family: Alumni Sans;
+	font-size: 48px;
+	font-weight: 800;
+	text-align: center;
+}
+.places-card_coins {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	justify-content: flex-end;
+	padding: 20px 35px 40px 42px;
+}
+.places-card_coins img {
+	z-index: 4;
+	width: 42px;
+	left: 50px;
+}
+@media (min-width: 1200px) {
+	.places-cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media only screen and (min-device-width: 1280px) and (max-device-width: 1919px) {
+	.places-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1279px) {
+	.places-cards {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+	.places-header_img__left {
+		display: none;
+	}
+	.places-header_img__right {
+		display: none;
+	}
+	.places-header_text {
+		text-align: center;
+	}
+}
+@media only screen and (min-device-width: 425px) and (max-device-width: 767px) {
+	.places-cards {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+	.places-header_img__left {
+		display: none;
+	}
+	.places-header_img__right {
+		display: none;
+	}
+	.places-header_text {
+		text-align: center;
+	}
+	.places-header_text {
+		width: 100%;
+
+		font-size: 40px;
+	}
+	.places-header_text span {
+		font-family: Alumni Sans;
+		font-size: 75px;
+		font-weight: 800;
+		line-height: 115.2px;
+		text-align: center;
+		color: #13c636;
+	}
+}

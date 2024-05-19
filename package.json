@@ -1,0 +1,27 @@
+{
+	"name": "landing-page",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "gulp",
+		"build": "gulp build",
+		"serve": "gulp serve"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.24.5",
+		"@babel/preset-env": "^7.24.5",
+		"browser-sync": "^3.0.2",
+		"del": "^7.1.0",
+		"gulp": "^5.0.0",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-uglify": "^3.0.2"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}
