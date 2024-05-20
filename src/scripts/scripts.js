@@ -20,8 +20,6 @@ async function loadSection(section) {
 		console.error(error);
 	}
 }
-document.addEventListener("DOMContentLoaded", function () {
-	loadSection("header");
-	loadSection("places");
-	loadSection("support");
-});
+loadSection("header");
+loadSection("places");
+loadSection("support");
