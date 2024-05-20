@@ -47,6 +47,15 @@
 .perks_header::after {
 	bottom: -10px;
 }
+@media only screen and (max-width: 424px) {
+	.perks_header p {
+		font-family: Alumni Sans;
+		font-size: 48px;
+		font-weight: 800;
+		line-height: 57.6px;
+		text-align: center;
+	}
+}
 @media only screen and (min-width: 425px) and (max-width: 767px) {
 	.perks_header p {
 		font-family: Alumni Sans;

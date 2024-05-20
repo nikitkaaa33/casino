@@ -238,3 +238,60 @@
 		text-align: center;
 	}
 }
+@media only screen and (max-width: 424px) {
+	.places-section {
+		padding: 20px;
+	}
+	.places-cards {
+		grid-template-columns: 1fr;
+		gap: 40px;
+		padding: 0;
+	}
+	.places-card {
+		width: 339px;
+		height: 460px;
+	}
+	.places-card_btn {
+		font-size: 22px;
+	}
+	.places-header_text {
+		font-size: 52px;
+	}
+	.text-overlay h2 {
+		font-size: 40px;
+	}
+	.places-header_img__left {
+		display: none;
+	}
+	.places-header_img__right {
+		display: none;
+	}
+	.places-header_text {
+		text-align: center;
+	}
+	.places-header_text {
+		width: 100%;
+
+		font-size: 32px;
+	}
+	.places-header_text span {
+		font-family: Alumni Sans;
+		font-size: 32px;
+		font-weight: 800;
+		line-height: 38.4px;
+		text-align: center;
+	}
+	.places-card {
+		width: 352px;
+		height: 478px;
+	}
+	.places-card_btn {
+		font-size: 22px;
+	}
+	.places-header_text {
+		font-size: 52px;
+	}
+	.text-overlay h2 {
+		font-size: 40px;
+	}
+}

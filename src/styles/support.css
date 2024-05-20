@@ -665,3 +665,126 @@
 		margin-top: 50px;
 	}
 }
+@media only screen and (max-width: 424px) {
+	.inner_support_container {
+		margin-top: 50px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+
+	.support {
+		width: 350px;
+		height: 243px;
+	}
+	.support_container .wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-items: center;
+		align-items: center;
+	}
+	.support_girl_container {
+		margin-left: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.support_girl_container img {
+		width: 380px;
+		height: 372.57px;
+	}
+	.support_container {
+		padding: 0px;
+	}
+	.support.luxarious {
+		background-image: url("../images/luxarious_768.svg");
+	}
+
+	.support.entertainment {
+		background-image: url("../images/luxarious_768.svg");
+	}
+	.support.world {
+		background-image: url("../images/luxarious_768.svg");
+	}
+	.support.fitness {
+		background-image: url("../images/luxarious_768.svg");
+	}
+	.support.gourmet {
+		background-image: url("../images/luxarious_768.svg");
+	}
+	.support.poolside {
+		background-image: url("../images/luxarious_768.svg");
+	}
+	.support.spa {
+		background-image: url("../images/luxarious_768.svg");
+	}
+	.support.services {
+		background-image: url("../images/luxarious_768.svg");
+	}
+	.contact_wrapper {
+		display: none;
+	}
+	.contact_wrapper_responsive {
+		display: block;
+		width: 425px;
+	}
+	.contact_wrapper_responsive img {
+		width: 400px;
+	}
+	.form_container {
+		width: 100%;
+		height: auto;
+		background-image: url(../images/form_BG_768.svg);
+		margin-top: 0;
+	}
+	.form_wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.form_wrapper h3 {
+		order: 1;
+		margin-top: 30px;
+		font-family: Tusker Grotesk;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 93.12px;
+		text-align: center;
+	}
+	.form_wrapper h3 span {
+		font-family: Inter;
+		font-size: 60px;
+		font-weight: 700;
+		line-height: 116.18px;
+		text-align: center;
+	}
+	.form_wrapper form {
+		order: 2;
+		width: 400px;
+		margin-left: 10%;
+	}
+	.form button {
+		margin-left: 0;
+		width: 80%;
+		height: 66px;
+	}
+	.form_wrapper form input {
+		box-shadow: 0px 4px 4px 0px #00000080 inset;
+		box-shadow: 0px -4px 4px 0px #00000040 inset;
+		box-shadow: 4px 0px 4px 0px #00000040 inset;
+		box-shadow: -4px 0px 4px 0px #00000040 inset;
+		width: 80%;
+	}
+
+	.form_wrapper img {
+		order: 3;
+		margin-top: 90px;
+		width: 300px;
+	}
+	.footer_container {
+		margin-top: 50px;
+	}
+}

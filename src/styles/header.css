@@ -211,3 +211,45 @@
 		margin-top: 20px;
 	}
 }
+@media only screen and (max-width: 424px) {
+	.header-section {
+		background-image: url("../images/header_BG_768.svg");
+		background-position: top;
+		height: 900px;
+		align-items: end;
+		padding-bottom: 30px;
+	}
+	.header-section_content {
+		width: 70%;
+		margin-left: 45px;
+	}
+	.header-section_fonts_main {
+		font-family: Inter;
+		font-size: 32px;
+		align-content: end;
+	}
+	.header-section_fonts_descr {
+		width: 120%;
+		font-size: 20px;
+	}
+	.header-section_content span {
+		font-size: 48px;
+		display: block;
+		width: 100%;
+		line-height: 57px;
+	}
+	.header-section_btn__more {
+		width: 280px;
+		height: 68px;
+	}
+	.header-section_btn__more {
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 33.89px;
+		text-align: left;
+	}
+	.header-section_btn_container {
+		justify-content: center;
+		margin-top: 20px;
+	}
+}
